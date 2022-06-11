@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="UnoAppBackgroundBugWPF.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UnoAppBackgroundBugWPF"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"    
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    Background="Orange">
+
+    <Grid RowSpacing="20" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition>Auto</RowDefinition>
+            <RowDefinition>Auto</RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Width="200" Height="100" CornerRadius="8" Background="{ThemeResource SolidBackgroundFillColorBaseBrush}">
+            <TextBlock Text="Hello, world!" Margin="20" FontSize="30" />
+        </Grid>
+        <Grid Grid.Row="1" Width="200" Height="100" CornerRadius="8" Background="{ThemeResource SolidBackgroundFillColorBaseBrush}">
+            <muxc:Button HorizontalAlignment="Center" Content="Standard XAML Button"/>
+        </Grid>
+    </Grid>
+</Page>
